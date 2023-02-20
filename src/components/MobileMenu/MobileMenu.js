@@ -97,14 +97,15 @@ const InnerWrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  animation: ${fadeIn} 600ms both;
+  animation: ${fadeIn} 600ms both,
+    ${slideIn} 500ms cubic-bezier(0.19, 0.86, 0.14, 1.06) both;
   animation-delay: 400ms;
 `;
 
 const CloseButton = styled(UnstyledButton)`
   position: absolute;
-  top: 10px;
-  right: var(--overfill);
+  top: -10px;
+  right: 0;
   padding: 16px;
 `;
 
