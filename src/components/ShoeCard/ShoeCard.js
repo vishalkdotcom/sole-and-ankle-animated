@@ -86,14 +86,16 @@ const Image = styled.img`
   display: block;
   width: 100%;
   transform-origin: 50% 80%;
-  transition: transform 450ms ease-in;
+  transition: transform 450ms ease-in, filter 900ms;
   will-change: transform;
+  filter: brightness(93%);
 
   @media (hover: hover) and (prefers-reduced-motion: no-preference) {
     ${Link}:hover &,
     ${Link}:focus & {
       transform: scale(1.1);
-      transition: transform 150ms ease-out;
+      transition: transform 150ms ease-out, filter 300ms;
+      filter: brightness(102%);
     }
   }
 `;
